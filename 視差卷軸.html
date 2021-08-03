@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            padding-top: 30px;
+
+        }
+        .pic01{
+            width: 100%;
+            height: 1080px;
+            background-image:url("https://i.pinimg.com/564x/9c/10/6e/9c106e263f991f47e837fdeb9c10042a.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .pic02{
+            width: 100%;
+            height: 1000px;
+            background-image: url("https://i.pinimg.com/564x/d3/ac/08/d3ac0841cba474cfd0e5ce39e1e4988d.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .pic03{
+            width: 100%;
+            height: 1000px;
+            background-image: url("https://i.pinimg.com/564x/b4/59/0f/b4590f23599629e9f06dff87a070266e.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .pic04{
+            width: 100%;
+            height: 1000px;
+            background-image: url("https://i.pinimg.com/564x/8c/7b/9e/8c7b9ee2f8842c315d03d01d05815a54.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+            /* 視差卷軸只要使用backgroung-attachment:fixed */
+        }
+        .text{
+            width: 100%;
+            background-color: wheat;
+            text-align: center;
+            padding: 60px 120px;
+            box-sizing: border-box;
+        }
+        .title{
+            width: 200px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+            line-height: 50px;
+            text-align:center;
+            position: absolute;
+            top: 50%;
+            left: calc(50% - 100px);
+            
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .nav{
+            width: 100%;
+            height: 30px;
+            background-color: burlywood;
+            text-align: center;
+            padding: 6.5px 0;
+            box-sizing: border-box;
+            position: fixed; 
+            top: 0px;
+            left: 0px;  
+            z-index: 1;
+        }
+        /* 如果導覽列要做成直的 高度要用VH來設 */
+        a{
+            width: 50px;
+            text-decoration: none;
+            margin-right: 50px;
+            box-sizing: border-box;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif; 
+           
+        }
+        a:hover{
+            color: sandybrown
+        }
+        a:last-child{
+            margin: 0;
+        }
+        
+        #anchor01,#anchor02,#anchor03,#anchor04{
+            position: absolute;
+            top:-30px
+        } 
+        /* #anchor02{
+            position: absolute;
+            top:-30px
+        } 
+        #anchor03{
+            position: absolute;
+            top:-30px
+        } 
+        #anchor04{
+            position: absolute;
+            top:-30px
+        } */
+        /* :root {
+        scroll-padding-top: 30px;
+        } */
+        /* 如果相同屬性可以用逗點寫成一行 */
+    </style>
+</head>
+<body>
+    <div class="nav">
+            <a href="#anchor01">SUNSET</a>
+            <a href="#anchor02">CLIFF</a>
+            <a href="#anchor03">CAR</a>
+            <a href="#anchor04">SURF</a></div>
+        </div>
+    <div class="pic01" >
+        <div class="title" >
+            <div id="anchor01"></div>
+            SCROLL DOWN</div>
+    </div>
+    <h1>PARALLAX DEMO</h1>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis architecto perferendis nulla quae exercitationem. Sequi, illum consectetur laborum inventore vitae at dignissimos nisi nemo eos consequuntur sit obcaecati quo?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, necessitatibus!
+    </div>
+    <div class="pic02" >
+        <div class="title"  >
+            <div id="anchor02"></div>
+            SCROLL DOWN</div>
+    </div>
+    <h1>PARALLAX DEMO</h1>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati distinctio libero possimus dicta eius? Voluptatibus ducimus a hic vero. Voluptatem maxime tempore ad ullam consectetur. Eum debitis labore ipsam fugit omnis perspiciatis laborum suscipit quod veritatis impedit? Similique veniam, quaerat suscipit ad totam in corrupti earum deleniti? Ipsa, enim. Repellendus?
+    </div>
+    <div class="pic03">
+        <div class="title" >
+            <div id="anchor03"></div>
+            SCROLL DOWN</div>
+    </div>
+    <h1>PARALLAX DEMO</h1>
+    <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis natus ea aut quae nemo et, sapiente corporis odio excepturi accusamus error ratione. Labore sint cupiditate voluptatibus recusandae ipsam nulla ab quisquam molestias est iusto vel rem vero quasi architecto eaque, temporibus odit reprehenderit aperiam, maxime assumenda voluptate. Unde fugit debitis enim repellendus. Odio quae corporis odit sit laboriosam facere dolorem. Sapiente, magni! Molestiae, distinctio vitae soluta autem repellendus laboriosam, laborum praesentium consequuntur deleniti non, facilis perspiciatis enim labore dolore quod libero. Obcaecati nemo aperiam ipsam est rerum quaerat porro magnam perspiciatis, reprehenderit dignissimos optio eos quidem necessitatibus, ad quis? Laborum!</div>
+    <div class="pic04">
+        <div class="title" >
+            <div id="anchor04"></div>
+            SCROLL DOWN</div>
+    </div>
+    <h1>PARALLAX DEMO</h1>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas magni officiis corrupti quae odio aliquam nam nulla excepturi modi voluptate quo, quidem nostrum dolores exercitationem dolor. Cumque deserunt molestias facere non modi neque veritatis recusandae id? Laboriosam, distinctio! Inventore exercitationem eum officiis debitis, ipsum vel voluptate commodi quidem enim velit, soluta unde consequatur. Consectetur nemo, temporibus ipsam odio corrupti deserunt libero earum deleniti eum voluptatem nulla commodi provident iste! Eaque nisi sunt veritatis dolore impedit neque minima nihil rerum dolor perspiciatis iste aliquid laborum necessitatibus doloremque dolores suscipit fugit accusamus blanditiis doloribus, quo nostrum consequatur quis. Ullam, recusandae placeat.</div>
+    
+</body>
+</html>
